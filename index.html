@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f345f4e19d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Analyst</p>
+            <h1>Hi, I'm <span>Pradeep</span> Sai Teja</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hello! I am Pradeep Sai Teja, a passionate Computer Science undergraduate currently pursuing my degree at SRM University. My specialization lies in the exciting 
+                    field of Big Data and Analytics, where I have honed my skills in extracting valuable insights from vast datasets.I have gained a solid foundation in the principles of 
+                    data analysis, machine learning, and data visualization. The dynamic curriculum has equipped me with the knowledge to tackle complex problems and make 
+                    informed decisions through data-driven solutions.As I embark on the next chapter of my journey, I am eagerly awaiting opportunities to contribute my skills and 
+                    knowledge in the role of a Data Analyst. I am enthusiastic about applying my academic learnings to real-world scenarios, where I can leverage data to uncover 
+                    patterns, derive meaningful insights, and support informed decision-making.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('research')">Research Work</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Analytics</span><br>Data Analysis, Data Visualization</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>My SQL</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>C & C++</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Data Analyst Intern | APSSDC Organization</span><br>Online | Jun23 - Aug23</li>
+                        <p>
+                            Data Analysis Trainee, Online During this training period, 
+                            I gained proficiency in various data analysis techniques using Python. 
+                            Successfully executed several data analysis projects, 
+                            demonstrating my competence in leveraging Python 
+                            and data analysis libraries to derive meaningful insights.
+                        </p>
+                    </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Present</span><br>at SRM University-AP        (GPA: 7.85/10.0)</li>
+                            <li><span>2021</span><br>Board of Intermediate Education AP        (93.0)</li>
+                            <li><span>2019</span><br>Board of Secondary Education AP        (9.8/10.0)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="research">
+                        <h2>Feature Reduction Using Bio Inspired Algorithms</h2>
+                        <br>
+                        <p>Research porject. Applied Genetic and Hill Climbing Algorithm on IMOT dataset</p>
+                        <a href="https://github.com/pradeepsaitej/Feature-Reduction-using-Bio-Inspired-Algorithms" target="_blank">
+                            <button class="button">
+                                Learn More
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------projects-------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Disease Prediction using symptoms</h2>
+                <p>This project focuses on disease predictionbased on symptoms, leveraging a varietyof machine learning algorithms, including Logistic Regression, Decision Trees, K-Means, and Random Forest. 
+                    The dataset undergoes meticulous preprocessing, including handling missing values and encoding categorical variables, setting the stage for robust model training. 
+                    The user interface is designed to seamlessly interact with users, prompting them to input relevant symptoms. These symptoms are then used by the models to predict potential diseases based on the provided information. 
+                    The project systematically evaluates and compares the performance of various models,utilizing key metrics such as accuracy, precision, recall, and F1-score.</p>
+                    <a href="https://github.com/pradeepsaitej/Disease-Prediction-using-Symptoms" target="_blank">Click Here</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Happiness Score report analysis</h2>
+                <p>The objective of project is to conduct a comprehensive analysis of the World Happiness Report 2021 ,aiming to uncover insights into the intricate factors influencing the well-being and happiness of nations. 
+                    Through rigorous data exploration, statistical analysis, and data visualization techniques, The project seeks to understand the dimensions of happiness by identifying correlations, patterns, and trends among various economic, social, and environmental variables. 
+                    The aim is to provide evidence-based insights that can inform policy decisions.The analysis will primarily center on a global perspective, it may also involve regional comparisons to uncover geographical intricacies. Findings are presented through interpretive analyses and visually engaging representations.</p>
+                    <a href="https://github.com/pradeepsaitej/Happiness-Score-report-Analysis" target="_blank">Click Here</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>GUI Based Portal</h2>
+                <p>The objective of the project is to develop a user friendly desktop application for our college hostel which would be useful for wardens and managers to take the 
+                    Queries and complaints and Digitally issue out-pass to students and staff which reduces the paper work and maintainin records easily</p>
+                    <a href="https://github.com/pradeepsaitej/GUI-Based-Portal" target="_blank">Click Here</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------contact------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>pradeepsaiteja186@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9398351534</p>
+                <div class="social-icons">
+                    <a href="https://github.com/pradeepsaitej" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pradeep-sai-teja-sanka-758b49243/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="button">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Pradeep. </p>
+    </div>
+</div>
+
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxxA64PR7LbH8Kc9U_ip9plLwestJ4wYp-NbJslKgnIdduXVytVh6oaIIjMzGnywgaT/exec';
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
